@@ -1,0 +1,69 @@
+p {
+  font-family: Lato;
+}
+
+table{
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  box-sizing: border-box;
+position: relative;
+}
+tbody{
+  /* display: block; */
+  overflow: hidden;
+  box-sizing: border-box;
+
+}
+thead{
+  overflow: hidden;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+tbody > tr{
+  /* display:grid; */
+  /* grid-auto-columns: 3; */
+  /* grid-template-rows: 50px; */
+  /* grid-auto-columns: 1fr; */
+  /* background-color: antiquewhite; */
+  overflow: hidden;
+  transform-origin: top;
+  /* transform: translateY(-100%) */
+  /* width: 100%; */
+}
+/* tbody > tr > * { */
+/* grid-row: 1 / auto; */
+
+/* } */
+tr.odd{
+  background-color: #333;
+  color: white;
+}
+
+/* td { */
+  /* grid-column:  */
+    /* overflow: hidden; */
+  /* transition: opacity .2s ease-in; */
+
+  /* } */
+
+ /* tr.last {
+  opacity: 0;
+} */
+ /* td > * {
+  transition: opacity .2s ease-in;
+  
+}  */
+
+/* tr:first-child > td > * {
+  max-height: 0;
+}  */
+
+/* tr:nth-last-child(2) {
+  background-color: transparent;
+}
+
+tr:nth-last-child(2) > td > *{
+    opacity: 0;
+} */

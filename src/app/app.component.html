@@ -1,0 +1,31 @@
+<hello name="{{ name }}"></hello>
+<p>
+	Start editing to see some magic happen :)
+</p>
+
+<table>
+	<thead>
+		<tr>
+			<th>Col1</th>
+			<th>Col2</th>
+			<th>Col3</th>
+		</tr>
+	</thead>
+	<tbody [@xroww]="data | async">
+		<tr *ngFor="let i of data | async; odd as odd; last as isLast" [class.odd]="isOdd(i)" [class.last]="isLast"
+			[@xlast]="isLast">
+			<td>
+				<div>{{ i }}</div>
+			</td>
+			<td>
+				<div>d</div>
+			</td>
+			<td>
+				<div>e</div>
+			</td>
+		</tr>
+</table>
+
+<p>
+	HEllo
+</p>
